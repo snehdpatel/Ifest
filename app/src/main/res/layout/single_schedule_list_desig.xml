@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffffff"
+    android:paddingRight="10dp"
+    android:layout_height="100dp">
+
+    <TextView
+        android:layout_margin="2dp"
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:background="#89888B"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/textN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/view"
+        android:fontFamily="times"
+        android:text="i.Ganith"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#d9353535"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/textDesc"
+        android:ellipsize="marquee"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_height="25dp"
+        android:text="Description of the event"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/view"
+        android:layout_alignLeft="@+id/textN"
+        android:layout_alignStart="@+id/textN"
+        android:textColor="#ff878787"
+        android:layout_toLeftOf="@+id/venueloc"
+        android:layout_toStartOf="@+id/venueloc" />
+
+    <TextView
+        android:textColor="#9A757575"
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="TIME 6PM"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/textN"
+        android:layout_alignRight="@+id/venueloc"
+        android:layout_alignEnd="@+id/venueloc" />
+
+    <TextView
+        android:textColor="#9A757575"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="VENUE LAB"
+        android:textSize="12sp"
+        android:id="@+id/venueloc"
+        android:layout_alignTop="@+id/textDesc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

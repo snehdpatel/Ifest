@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/bkgnd"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tirthcshahgmail.ifest15.AboutUs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="About Us"
+        android:textColor="#ffffff"
+        android:id="@+id/aboutUs"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_below="@+id/aboutUs"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Dhirubhai Ambani Institute of Information and Communication Technology, promoted by Dhirubhai Ambani Foundation and the Anil Dhirubhai Ambani Group, was established with a mission to provide such an enriching environment to enable young minds to widen their horizons in the field of ICT. Set in the backdrop of the lush greenery of Gandhinagar, DA-IICT has and will continue to act in the field of ICT while being at complete harmony with the nature, society and humanity. \n\nThe Institute of Electrical and Electronic Engineers Student Branch at DA-IICT endeavors to promote awareness among the students on the opportunities that exist in the field of electronics and electrical engineering. Our objective is to bridge the gap between industry and the students studying in the technology-related fields, while promoting and providing an intellectually stimulating university related environment for the student community. IEEE Student Branch DA-IICT aims to provide an interactive platform for students to develop professional and technical abilities. Since the inception, it is successful in organizing various events with well - defined objectives.\n\nDisclaimer\nIn any case of discrepencies the decision of the i.Fest committee is final regarding issues of Prize Money, Venue, Time\n "
+            android:id="@+id/textView4"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_below="@+id/aboutUs"
+            android:layout_centerHorizontal="true" />
+    </ScrollView>
+
+
+</RelativeLayout>
