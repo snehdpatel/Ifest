@@ -44,17 +44,25 @@ public class Winners extends AppCompatActivity {
                 loading.dismiss();
             }
         },
-        new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                System.out.println("Error in fetch")
-				Toast.makeText(getApplicationContext(), error.getMessage().toString(), Toast.LENGTH_LONG).show();
-				loading.dismiss();
-            }
-        });
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        System.out.println("Error in fetch");
+                        Toast.makeText(getApplicationContext(), error.getMessage().toString(), Toast.LENGTH_LONG).show();
+                        loading.dismiss();
+                    }
+                });
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
+
+    /*static class Comparator implements Comparator<EventWinners>
+    {
+        public int compare(CarSort c1, CarSort c2)
+        {
+            return c1.getColor().compareTo(c2.getColor());
+        }
+    }*/
 
     private void processJSON(String response) {
 

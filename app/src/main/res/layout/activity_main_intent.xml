@@ -24,6 +24,13 @@
         android:id="@+id/mns"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        <!--<LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">-->
+
             <com.tirthcshahgmail.ifest15.WrapContentHeightViewPager
                 android:id="@+id/pager"
                 android:layout_above="@+id/ll"
